@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.section {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#avatar {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+/* Estilos para el icono de Facebook flotante */
+.facebook-float {
+    position: fixed;
+    bottom: 80px; /* Ajusta la posición vertical según tus preferencias */
+    right: 20px;
+    z-index: 1000;
+    background-color: #1877f2; /* Color de fondo de Facebook */
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    animation: bounce 1s infinite alternate; /* Agregar la animación de rebote */
+    transform-origin: bottom center; /* Establecer el origen de la transformación */
+}
+
+.facebook-float img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Estilos para el icono de WhatsApp flotante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    animation: bounce 1s infinite alternate; /* Agregar la animación de rebote */
+    transform-origin: bottom center; /* Establecer el origen de la transformación */
+}
+
+.whatsapp-float img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
